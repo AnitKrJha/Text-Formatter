@@ -8,7 +8,8 @@ function ButtonsArea({ setText, setLines, setChar }) {
 
   function RemSpace(e) {
     setText((x) => {
-      x = x.replace(/\s+/g, " ");
+      while(x.includes("  "))
+      x = x.replace("  ", " ");
       setChar((y) => x.length);
       return x;
     });
