@@ -2,15 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import Header from './components/header';
-import TextHolder from './components/textholder';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <>
   <App />
-  <Header company='Text Modifier'/>
-  <TextHolder/>
+  
   
   </>
 
